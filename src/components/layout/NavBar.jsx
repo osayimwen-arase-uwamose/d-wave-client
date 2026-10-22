@@ -80,6 +80,14 @@ const NavBar = ({
           className="hidden items-center gap-8 md:flex lg:gap-10"
         >
           <NavLink
+           to="/"
+           className={navLinkClass}
+          >
+            Home
+          </NavLink>
+
+
+          <NavLink
            to="/events"
            className={navLinkClass}
           >
