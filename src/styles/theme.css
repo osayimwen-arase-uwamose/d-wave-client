@@ -1,0 +1,31 @@
+@theme {
+  --color-primary: #0284c7;
+  --color-primary-light: #38bdf8;
+  --color-primary-dark: #0369a1;
+
+  --color-secondary: #334155;
+  --color-accent: #38bdf8;
+
+  --color-background: #f8fafc;
+  --color-background-light: #f1f5f9;
+
+  --color-surface: #ffffff;
+  --color-surface-muted: #e2e8f0;
+
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+
+  --color-dwave-dark: #0f172a;
+  --color-dwave-darker: #020617;
+
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+
+  --shadow-neo: 4px 4px 0 #0f172a;
+  --shadow-neo-sm: 2px 2px 0 #0f172a;
+
+  --radius-card: 0.75rem;
+};
