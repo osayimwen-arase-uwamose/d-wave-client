@@ -15,7 +15,7 @@ const CONTACT_DETAILS = [
     icon: Mail,
     links: [
       {
-        label: "[info@dwaveentertainment.co.uk](mailto:info@dwaveentertainment.co.uk)",
+        label: "info@dwaveentertainment.co.uk",
         href: "mailto:info@dwaveentertainment.co.uk",
       },
     ],

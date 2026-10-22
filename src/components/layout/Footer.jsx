@@ -63,10 +63,10 @@ const Footer = () => {
               className="dw-footer__links"
             >
               <Link to="/events">
-                Events Calendar
+                Events
               </Link>
 
-              <Link to="/about-us">
+              <Link to="/about">
                 About Us
               </Link>
 
@@ -175,6 +175,5 @@ const Footer = () => {
     </footer>
   );
 };
-
 
 export default Footer;

@@ -31,7 +31,7 @@ const Hero = ({
 
   const subtitle =
     data?.subTitle ??
-    "Building community, culture, and opportunity through entertainment, football and structured experience.";
+    "Bringing entertainment, culture, and community together through live experiences, artist management, and partnerships that create lasting impact.";
 
 
   const handleEventsClick = () => {

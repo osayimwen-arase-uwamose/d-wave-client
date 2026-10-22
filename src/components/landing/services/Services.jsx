@@ -30,6 +30,27 @@ const Services = forwardRef(
       },
     ];
 
+    const servicesRendered = [
+      {
+        serviceTitle: "Events & Live Experiences",
+        serviceIcon: "calendar",
+        serviceDescription:
+          "From live performances and concerts to major entertainment events, we bring people together through experiences worth remembering. We handle the planning and coordination that turn ideas into moments people want to be part of.",
+      },
+      {
+        serviceTitle: "Artist Management & Development",
+        serviceIcon: "mic",
+        serviceDescription:
+          "We work closely with artists to develop their careers, shape their identity, and navigate the business behind their music. From strategic planning to brand partnerships, we help turn creative potential into lasting growth.",
+      },
+      {
+        serviceTitle: "Brand Partnerships & Culture",
+        serviceIcon: "handshake",
+        serviceDescription:
+          "We connect artists, brands, and communities through partnerships that feel authentic. By bringing entertainment and culture together, we create opportunities that build meaningful relationships and leave a lasting impression.",
+      },
+    ];
+
     return (
       <section
         ref={ref}
@@ -52,11 +73,11 @@ const Services = forwardRef(
               </h2>
 
               <p className="mb-10 text-lg leading-relaxed text-slate-600">
-                {data?.paragraph ?? "We provide comprehensive artist management services designed to nurture creativity while handling the business. From booking world tours to building a distinct brand identity."}
+                {data?.paragraph ?? "We bring people together through live entertainment, help artists build their careers, and create partnerships that connect brands with culture. From developing an artist's identity to producing memorable experiences, we bring the right people, ideas, and expertise together to make things happen."}
               </p>
 
               <div className="grid gap-6">
-                {(data?.servicesRendered ?? []).map(
+                {(data?.servicesRendered ?? servicesRendered).map(
                   (service) => (
                     <ServicesCard
                       key={service._id ?? service.serviceTitle}
