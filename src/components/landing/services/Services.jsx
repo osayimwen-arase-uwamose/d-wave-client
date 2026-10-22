@@ -9,22 +9,22 @@ const Services = forwardRef(
 
     const gallery = [
       {
-        image: serviceImages[0]?.url,
+        image: "https://res.cloudinary.com/gbpvhers/image/upload/v1792706076/service-IV.jpg",
         alt: "Sound mixing console",
         height: "h-64",
       },
       {
-        image: serviceImages[1]?.url,
+        image: "https://res.cloudinary.com/gbpvhers/image/upload/v1792706075/service-I_1.jpg",
         alt: "Audio equipment at an event",
         height: "h-48",
       },
       {
-        image: serviceImages[2]?.url,
+        image: "https://res.cloudinary.com/gbpvhers/image/upload/v1792706075/service-II_1.jpg",
         alt: "Backstage equipment",
         height: "h-48",
       },
       {
-        image: serviceImages[3]?.url,
+        image: "https://res.cloudinary.com/gbpvhers/image/upload/v1792706270/IMG_0647.JPG_1.jpg",
         alt: "Audience enjoying a live performance",
         height: "h-64",
       },
