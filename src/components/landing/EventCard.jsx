@@ -61,10 +61,6 @@ const EventCard = ({ event }) => {
           {event.title}
         </h3>
 
-        <p className="mb-5 text-sm leading-7 text-slate-600">
-          {event.description}
-        </p>
-
         <p className="mb-4 flex items-center gap-2 text-sm text-slate-500">
           <CalendarDays size={16} aria-hidden="true" />
 
