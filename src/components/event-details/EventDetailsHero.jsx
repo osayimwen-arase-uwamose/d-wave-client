@@ -45,11 +45,7 @@ function EventDetailsHero({ event }) {
   const eventDate = formatEventDate(event?.scheduledAt);
   const eventTime = formatEventTime(event?.scheduledAt);
 
-  const ticketUrl =
-    typeof event?.ticketUrl === "string" &&
-    /^https?:\/\//i.test(event.ticketUrl.trim())
-      ? event.ticketUrl.trim()
-      : null;
+  const ticketUrl = event?.ticketUrl.trim()
 
   return (
     <section className="relative isolate overflow-hidden bg-slate-950">
@@ -83,7 +79,7 @@ function EventDetailsHero({ event }) {
               />
 
               <p className="text-sm font-medium">
-                Event artwork is not available.
+                Event flyer is not available.
               </p>
             </div>
           )}
@@ -179,6 +175,8 @@ function EventDetailsHero({ event }) {
               </p>
             )}
 
+            <br/>
+            
             <Link
               to="/events"
               className="mt-5 inline-flex items-center text-sm font-semibold text-white/90 underline decoration-white/40 underline-offset-4 transition hover:text-white"

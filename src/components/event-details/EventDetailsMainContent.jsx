@@ -22,11 +22,7 @@ const formatEventDate = (value) => {
 };
 
 function EventDetailsMainContent({ event, eventIsPast = false }) {
-  const ticketUrl =
-    typeof event?.ticketUrl === "string" &&
-    /^https?:\/\//i.test(event.ticketUrl.trim())
-      ? event.ticketUrl.trim()
-      : null;
+  const ticketUrl = event?.ticketUrl.trim(); 
 
   return (
     <section className="bg-slate-50 px-5 py-16 sm:px-8 sm:py-20 lg:px-10">

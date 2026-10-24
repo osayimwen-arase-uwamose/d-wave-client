@@ -1,4 +1,7 @@
-import { CalendarDays, ExternalLink, MapPin } from "lucide-react";
+import { CalendarDays, ExternalLink, MapPin, ArrowRight } from "lucide-react";
+
+import { Link } from "react-router-dom";
+import sliceText from "../../utils/sliceText";
 
 const EventCard = ({ event }) => {
   const scheduledAt = new Date(event.scheduledAt);
@@ -60,6 +63,17 @@ const EventCard = ({ event }) => {
         <h3 className="dw-event-card__title">
           {event.title}
         </h3>
+
+        <p className="mb-5 text-sm leading-7 text-slate-600">
+          {sliceText(event.description, 10)}{" "}
+          <Link
+            className="inline-flex items-center gap-2 font-bold text-sky-700 transition-colors hover:text-sky-500"
+            to={`/event-info/${event._id}`}
+          >
+            View full details
+            <ArrowRight size={18} aria-hidden="true" />
+          </Link>
+        </p>
 
         <p className="mb-4 flex items-center gap-2 text-sm text-slate-500">
           <CalendarDays size={16} aria-hidden="true" />
