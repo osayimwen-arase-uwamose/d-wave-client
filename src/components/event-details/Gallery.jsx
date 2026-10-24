@@ -113,12 +113,11 @@ function Gallery({ event }) {
               </span>
 
               <h3 className="mt-5 text-lg font-bold text-slate-900">
-                The gallery is being prepared
+                The memories are on their way!
               </h3>
 
               <p className="mt-2 max-w-md text-sm leading-6 text-slate-600">
-                Event photos will appear here when they are available.
-                Check back for a look at the experience.
+                Event photos will be available here soon. Check back to relive the highlights and experience the moments you might have missed.
               </p>
             </div>
           ) : (
